@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+
+body {
+  font-family: Ubuntu;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fff;
+  background-blend-mode: darken;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgo8cmVjdCB3aWR0aD0nNScgaGVpZ2h0PSc1JyBmaWxsPScjZmZmJy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNjY2MnLz4KPC9zdmc+");
+  background-repeat: repeat;
+
+  cursor: crosshair;
+}
+/*
+#cover {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+#cover img{
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+*/
+h1 {
+	font-family: Ubuntu;
+	font-size: 1.65rem;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+h3 {
+	font-family: Ubuntu;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+p {
+	font-family: Ubuntu;
+	font-size: 1rem;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 25px;
+  margin-bottom: 0px;
+}
+blockquote {
+	font-family: Ubuntu;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+pre {
+	font-family: Ubuntu;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.65rem;
+}
+
+.sub {
+  position: absolute;
+  top: 2vh;
+  right: 0;
+  display: inline-flex;
+  width: 80%;
+
+  z-index: 9989;
+}
+
+.sub a{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  margin-right: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.sub a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  background-color: #000;
+  margin-right: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.sub a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub a:active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+}
+
+.sub a:visited {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  margin-right: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.sub a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Header block*/
+#header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  max-height:10vh;
+  min-height: 10vh;
+
+  padding-left:2%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right:2%;
+
+  border-bottom: 1px dashed #000;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  background-blend-mode: darken;
+  background-repeat: repeat;
+  background-color: #fff;
+/*
+  background-image: url('../img/texture5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+#header h1,h3{
+  font-weight: 400;
+}
+
+.logo {
+  max-height: 6vh;
+  max-width: 25%;
+  z-index: 9999;
+}
+
+.logo img{
+  max-width: 6vh;
+  max-height: 6vh;
+  margin-right: 0.5%;
+}
+
+.cut img{
+  position: fixed;
+  height: 2.5%;
+  top:8.5vh;
+  z-index: 9999;
+  left: 2px;
+}
+
+.category {
+
+}
+
+.category h1{
+
+}
+
+.category img{
+  max-height: 3vh;
+  min-height: 3vh;
+  min-width: 5vh;
+  max-width: 5vh;
+  margin-bottom: 1vh;
+  padding-left: 3%;
+  display: inline-flex;
+}
+.subject{
+  font-weight: 500;
+}
+
+.tite{
+  font-style: italic;
+}
+/*main container for content*/
+#contain {
+  position: fixed;
+  left: 0;
+  top:10vh;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  border-bottom: 1px solid #000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
+
+.boTop {
+  border-top: 1px solid #000;
+}
+
+.boBot {
+  border-bottom: 1px solid #000;
+}
+
+.boRow {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.boL {
+  border-left: 1px solid #000;
+}
+
+.boR {
+  border-right: 1px solid #000;
+}
+
+.wind {
+  border: 1px solid black;
+}
+
+/*overridden bootsrap*/
+.row {
+  min-height:14px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: inline-block;
+
+  /*add for padding w/o lines
+  padding: 3%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  */
+
+  /*Alternate for show system
+  margin-top: 3vh;
+  margin-bottom: 3vh;*/
+
+}
+
+.row h1,h3{
+  padding-left: 3%;
+  font-weight: 400;
+  padding-top: 1vh;
+}
+
+.row p{
+  padding-top: 2vh;
+  padding-left: 3%;
+  line-height: 1.5rem;
+}
+.col-md-1,.col-md-2,.col-md-3,
+.col-md-4,.col-md-5,.col-md-6,
+.col-md-7,.col-md-8,.col-md-9,
+.col-md-10,.col-md-11,.col-md-12 {
+
+}
+
+.col-md-1,.col-md-2,.col-md-3,
+.col-md-4,.col-md-5,.col-md-6,
+.col-md-7,.col-md-8,.col-md-9,
+.col-md-10,.col-md-11,.col-md-12 img {
+  padding: 0px;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+}
+
+.text{
+  font-weight: 300;
+}
+
+.tab1{
+  font-size: 6rem;
+  width: 0;
+  word-wrap: break-word;
+}
+
+.tab2 {
+
+}
+
+.tab3 {
+
+}
+
+.draggable {
+  border-radius: 10px;
+  margin: 0 10px 10px 0;
+  float: left;
+  padding-top: 2vh;
+}
+
+.draggable img{
+  max-width: 30vh;
+  border:1px dashed black;
+}
+.draggable.is-pointer-down {
+  z-index: 2; /* above other draggies */
+}
+.draggable.is-dragging { opacity: 0.5; }
+
+.container {
+  min-height: 40vh;
+}
+
+.handle {
+  background: #555;
+  background: hsla(0, 0%, 0%, 0.4);
+  width: 100%;
+  height: 30px;
+  top:  90%;
+  position: relative;
+}
